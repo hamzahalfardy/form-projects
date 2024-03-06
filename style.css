@@ -1,0 +1,68 @@
+h3{
+ font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+.container{
+    box-shadow: 2px 2px 2px 2px #ccc;
+    width: 55%;
+    height: 120%;
+}
+
+input[type="text"], input[type="file"], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize:vertical;
+    box-shadow: 2px 2px  #ccc;
+    
+}
+
+label{
+    padding: 5px 5px 5px 12px;
+    display: inline-block;
+}
+
+input[type="text"]:hover, 
+input[type="file"]:hover, 
+textarea:hover{
+    border-color: rgb(221, 164, 19);
+}
+
+input[type="text"]:visited, 
+input[type="file"]:visited, 
+textarea:after{
+    border-color: rgb(228, 0, 0);
+}
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75{
+    float: left;
+    width: 75%;
+    margin: 6px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width=600px){
+    .row{
+        flex-direction: column;
+    }
+    .col-25,
+    .col-75,
+    input[type="submit"]{
+        width: 100%;
+        margin-top: 0;
+    }
+}
